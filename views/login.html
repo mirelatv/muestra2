@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="../assets/icons/icon_head.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">  
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Login</title>
+</head>
+
+<body>
+  <main class="min100vh gray-grad">
+    <section class="container-fluid">
+      <div class="row">
+        <div id="welcome-image" class="col-12 col-md-6"></div>
+        <div id="login-content" class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
+          <!-- Texto de bienvenida -->
+          <div class="row my-3">
+            <div class="col-12 col-sm-6 offset-sm-3">
+              <figure class="mb-4">
+                <img src="../assets/images/codebook-logo.svg" alt="" class="img-fluid">
+              </figure>
+            </div>
+            <div class="col-12 col-sm-10 offset-sm-1 text-center">
+              <p class="d-none d-sm-block">Bienvenida a <b>Codebook</b>, la red de egresadas de Laboratoria.</p>
+              <p class="d-block d-sm-none">¡Bienvenida, coder!</p>
+            </div>
+          </div>
+          <form class="w-75 max400">
+            <!-- Login con email -->
+            <div class="form-row mb-2">
+              <div class="form-group col-12 ">
+                <label for="email" class="sr-only"></label>
+                <input type="text" id="email" class="form-control rounded-corners" placeholder="Email">
+              </div>
+              <div class="form-group col-12">
+                <label for="password" class="sr-only"></label>
+                <input type="password" id="password" class="form-control rounded-corners" placeholder="Password">
+                <small id="login-help" class="form-text text-center mt-2 d-none">
+                  Correo y/o contraseña incorrectos. Inténtalo nuevamente.
+                </small>
+              </div>
+              <div class="form-group col-8 offset-2 col-md-6 offset-md-3">
+                <button id="email-login" class="btn btn-yellowLab form-control rounded-corners">Log in</button>
+              </div>
+            </div>
+            <p class="text-center mb-3">O bien ingresa con...</p>
+            <!-- Botones para iniciar con redes sociales -->
+            <div class="form-row">
+              <div class="form-group col-6">
+                <button type="button" id="fb-login" class="btn btn-primary icon-btn rounded-corners float-right"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+              </div>
+              <div class="form-group col-6">
+                <button type="button" id="google-login" class="btn btn-danger icon-btn rounded-corners"><i class="fa fa-google" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </form>
+          <p class="text-center">¿No tienes una cuenta? <a class="link-yellowLab font-weight-bold" href="register.html">Regístrate.</a> </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+  
+  <script src="../js/app.js"></script>
+</body>
+</html>

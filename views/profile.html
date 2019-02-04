@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="../assets/icons/icon_head.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">  
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Profile</title>
+</head>
+
+<body class="bottom-img min100vh">
+  <header class="container-fluid">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-grayLab">
+      <a class="navbar-brand" href="home.html">
+        <img src="../assets/images/codebook-logo-blanco.svg" alt="Logo Codebook" width="130" height="45">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse float-left" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle displayUsername" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Username
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Mi perfil</a>
+              <a class="dropdown-item" href="#">Ver lista de amigos</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="sign-out"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="cover-photo" class="container-fluid">
+    </section>
+    <section class="container user-info">
+      <div class="row">
+        <div class="col-12 col-md-10 mt-3">
+          <div class="row">
+            <div class="col-4 offset-4 offset-sm-0 col-md-4">
+              <img id="profile-photo" class="img-fluid img-thumbnail rounded-img" src="../assets/images/default.jpg" alt="">
+            </div>
+            <div class="col-8 offset-2 offset-sm-0 col-md-5 offset-md-3 username text-center mt-3 text-md-left">
+              <h1 class="displayUsername">Username</h1>
+              <p><i class="fa fa-envelope-o gray-icon d-block d-sm-inline" aria-hidden="true"></i> <span id="displayEmail"> code.2018@laboratoria.com</span></p>
+              <p><i class="fa fa-code gray-icon d-block d-sm-inline" aria-hidden="true"></i> <span> Developer Jr.</span></p>
+              <p><i class="fa fa-map-marker gray-icon d-block d-sm-inline" aria-hidden="true"></i> <span> Lima - Perú</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container mb-4">
+      <div class="row">
+        <div class="d-none d-md-block col-md-4" id="posts-container">
+        </div>
+        <div class="col-12 col-md-8 mt-3">
+          <div class="jumbotron jumbo-first">
+            <h1 class="display-4">Bienvenida</h1>
+            <p class="lead"><i class="fa fa-heart" aria-hidden="true"></i> Hola Mundo, soy egresada de Laboratoria Lima 2017-2</p>
+            <p class="lead"><i class="fa fa-heart" aria-hidden="true"></i> Full stack for life!</p>
+            <hr class="my-4">
+            <p>Estoy muy feliz de pertenecer a esta red y poder seguir creciendo juntas!</p>
+            <p class="lead text-center">
+              <a class="btn btn-yellowLab btn-lg" href="#" role="button"><i class="fa fa-github" aria-hidden="true"></i> mi portafolio</a>
+            </p>
+          </div>
+          <div class="jumbotron jumbo-style">
+            <h1 class="display-4">JS:Recurso Importante</h1>
+            <p class="lead">Libro que todo programador debe tener a la mano</p>
+            <hr class="my-4">
+            <img src="../assets/images/eloquent.png" class="img-fluid img-thumbnail" alt="eloquent-js">
+            <p class="lead text-center mt-3">
+              <a class="btn btn-yellowLab btn-lg" href="http://eloquentjavascript.net/" role="button">Eloquent JS</a>
+            </p>
+          </div>
+          <div class="jumbotron jumbo-style">
+            <h1 class="display-4">J-query: Recurso Importante</h1>
+            <p class="lead">Guía muy útil!</p>
+            <hr class="my-4">
+            <img src="../assets/images/oscar-otero.JPG" class="img-fluid img-thumbnail" alt="oscar-otero">
+            <p class="lead text-center mt-3">
+              <a class="btn btn-yellowLab btn-lg" href="https://oscarotero.com/jquery/" role="button">Guía Jquery</a>
+            </p>
+          </div>
+          <div class="jumbotron jumbo-style">
+            <h1 class="display-4">Markdown: para el README perfecto</h1>
+            <p class="lead">Guía recomendada</p>
+            <hr class="my-4">
+            <img src="../assets/images/jcastro.png" class="img-fluid img-thumbnail" alt="jcastro">
+            <p class="lead text-center mt-3">
+              <a class="btn btn-yellowLab btn-lg" href="http://joedicastro.com/pages/markdown.html" role="button">Guía Markdown</a>
+            </p>
+          </div>
+          <div class="jumbotron jumbo-style">
+            <h1 class="display-4">Meetup: eventos, eventos!</h1>
+            <p class="lead">Para que estes siempre actualizada, busca los últimos eventos en tecnología de tu localidad</p>
+            <hr class="my-4">
+            <img src="../assets/images/meetup.JPG" class="img-fluid img-thumbnail" alt="meetup">
+            <p class="lead text-center mt-3">
+              <a class="btn btn-yellowLab btn-lg" href="https://www.meetup.com/es-ES/" role="button">Meetup</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../vendors/moment.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/home.js"></script>
+  <script src="../js/images.js"></script>
+</body>
+
+</html>
